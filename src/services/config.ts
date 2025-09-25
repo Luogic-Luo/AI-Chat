@@ -8,7 +8,7 @@ const KEY = 'chatai_llm_config'
 
 export const defaultConfig: LLMConfig = {
   baseUrl: 'https://openai.qiniu.com/v1',
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey: '',
   model: 'deepseek-v3',
 }
 
@@ -29,6 +29,5 @@ export const llmConfig = {
     localStorage.removeItem(KEY)
   },
 }
-
 
 
