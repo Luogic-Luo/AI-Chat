@@ -8,7 +8,7 @@ const KEY = 'chatai_llm_config'
 
 export const defaultConfig: LLMConfig = {
   baseUrl: 'https://openai.qiniu.com/v1',
-  apiKey: '',
+  apiKey: import.meta.env.VITE_API_KEY,
   model: 'deepseek-v3',
 }
 
