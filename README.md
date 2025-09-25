@@ -1,73 +1,31 @@
-# React + TypeScript + Vite
+# AI Chat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Chat 是一个基于前端技术的聊天应用，旨在为用户提供与不同角色进行对话的体验。项目使用了 **React**、**Vite** 和 **Tailwind CSS** 等现代前端技术，支持角色搜索、文本与语音对话、以及自定义角色创建等功能。
 
-Currently, two official plugins are available:
+## 预览
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[frontend](https://ai-chat-gamma-jet.vercel.app/)
 
-## React Compiler
+## 特性
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **角色对话**：与预设的角色进行对话，模拟真实的交流体验。
+- **语音支持**：支持文本到语音（TTS）功能，让角色通过语音与用户互动。
+- **自定义角色**：允许用户上传角色设定，并与其进行对话。
+- **简易注册/登录**：支持用户注册与登录，个性化体验。
+- **实时交互**：实时显示用户和角色的对话记录。
 
-## Expanding the ESLint configuration
+## 技术栈
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **前端框架**：React、Vite
+- **样式库**：Tailwind CSS
+- **状态管理**：Zustand（轻量的 React 状态管理工具）
+- **语音支持**：Web Speech API（语音识别与文本转语音）
+- **部署平台**：Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 安装与使用
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. 克隆仓库：
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
