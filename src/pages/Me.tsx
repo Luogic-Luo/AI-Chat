@@ -9,7 +9,7 @@ import { listModels } from '../services/llm'
 export default function Me() {
   const nav = useNavigate()
   const user = auth.currentUser()
-  const [_, setTick] = useState(0)
+  const [_] = useState(0)
   const convs = useMemo(() => (user ? conversationsService.listByUser(user.id) : []), [user, _])
 
   if (!user) {
