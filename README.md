@@ -4,7 +4,7 @@ AI Chat 是一个基于前端技术的聊天应用，旨在为用户提供与不
 
 ## 预览
 
-[frontend](https://ai-chat-gamma-jet.vercel.app/)
+[frontend](https://ai-chat-gilt-five.vercel.app/)
 
 ## 特性
 
