@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "env": {
+    "VITE_API_KEY": "@VITE_API_KEY"
+  }
+}
